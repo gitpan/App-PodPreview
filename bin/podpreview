@@ -12,15 +12,11 @@ App::PodPreview::podpreview(shift);
 
 =head1 NAME
 
-podpreview
+podpreview - Preview POD files in a browser
 
 =head1 VERSION
 
-version 0.001
-
-=head1 ABSTRACT
-
-Preview POD file in a browser
+version 0.002
 
 =head1 SYNOPSIS
 

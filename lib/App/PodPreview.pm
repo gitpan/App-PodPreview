@@ -1,9 +1,9 @@
 package App::PodPreview;
 BEGIN {
-  $App::PodPreview::VERSION = '0.001';
+  $App::PodPreview::VERSION = '0.002';
 }
 
-# ABSTRACT: Preview POD file in a browser
+# ABSTRACT: Preview POD files in a browser
 
 use strict;
 use warnings;	
@@ -16,6 +16,7 @@ use Browser::Open qw(open_browser_cmd);
 use File::HomeDir;
 use File::Temp;
 use File::Spec;
+use Carp qw(carp);
 
 sub podpreview :Export
 {
@@ -76,11 +77,11 @@ sub podpreview :Export
 
 =head1 NAME
 
-App::PodPreview
+App::PodPreview - Preview POD files in a browser
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

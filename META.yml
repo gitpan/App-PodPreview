@@ -1,5 +1,5 @@
 ---
-abstract: 'Preview POD file in a browser'
+abstract: 'Preview POD files in a browser'
 author:
   - 'Peter Shangov <pshangov@yahoo.com>'
 build_requires:
@@ -16,6 +16,7 @@ meta-spec:
 name: App-PodPreview
 requires:
   Browser::Open: 0
+  Carp: 0
   Config::Tiny: 0
   File::HomeDir: 0
   File::Spec: 0
@@ -24,4 +25,4 @@ requires:
   Pod::Simple::HTML: 0
   Pod::Usage::CommandLine: 0
   autodie: 0
-version: 0.001
+version: 0.002

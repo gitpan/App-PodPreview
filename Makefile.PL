@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Preview POD file in a browser',
+  'ABSTRACT' => 'Preview POD files in a browser',
   'AUTHOR' => 'Peter Shangov <pshangov@yahoo.com>',
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
@@ -26,6 +26,7 @@ my %WriteMakefileArgs = (
   'NAME' => 'App::PodPreview',
   'PREREQ_PM' => {
     'Browser::Open' => '0',
+    'Carp' => '0',
     'Config::Tiny' => '0',
     'File::HomeDir' => '0',
     'File::Spec' => '0',
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     'Pod::Usage::CommandLine' => '0',
     'autodie' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }
